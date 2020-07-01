@@ -9,6 +9,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="app.js"></script>
+   <script> document.getElementById("sound").volume ="0.2" </script>
    
 </head>
 
@@ -16,22 +17,21 @@
     
 
 
-<!-- <audio id="sound" src="music.mp3" autoplay>
+<audio id="sound" src="music.mp3" >
 <p>If you are reading this, it is because your browser does not support the audio element.     </p>
-<embed src="music.mp3" width="180" height="90" hidden="true" autoplay="true" loop="true" volume="0.2" />
-</audio> -->
+<embed src="music.mp3" width="180" height="90" hidden="true"  loop="true"  />
+</audio>
 <img id="header" src="Etikett.png" >
 <img id="mute" src="unmute.png" >
 
 
 
-    <div id="startingPoint"> <img id="explain" src="Interface.png" ></div>
     
     
-<div id="button_wrap2"> <button class="animate__animated animate__fadeInUp animate__delay-1s" id="go" > Got it! </button> </div> 
-  <div id="button_wrap"> <a id="gotit" href="main.html"> Got it!</a>
-  </div>
-   
+    
+
+<div id="button_wrap"> <button class="animate__animated animate__fadeInUp animate__delay-1s" id="init" onclick="init()"> Start</button> </div>
+   <div id="button_wrap2"> <!--<button class="animate__animated animate__fadeInUp animate__delay-3s" id="go" onclick="hideStart()"> Start </button> --> </div> 
 
    <div id="text"> Let us take you on a fruity adventure. <br>
     Follow the peach. </div>
@@ -43,7 +43,7 @@
 
     <div class="wrapper">
 
-        <video class="animate__animated animate__fadeIn animate__slow" source src="footage2.mp4" id="video">
+        <video class="animate__animated animate__fadeIn animate__faster" source src="footage2.mp4" id="video">
 
         </video>
 
