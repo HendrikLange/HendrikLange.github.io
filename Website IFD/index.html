@@ -8,35 +8,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
     <script src="app.js"></script>
    
 </head>
 
 <body>
     
+    <div>
+        <canvas id="canvas" />
+    </div>
+    <div id="container">
+        
+        <!--------------------------------------->
+        
+        <!--------------------------------------->
+    </div>
 
 
-<!-- <audio id="sound" src="music.mp3" autoplay>
+
+
+
+
+
+
+
+
+
+
+
+<audio id="sound" src="music.mp3" autoplay>
 <p>If you are reading this, it is because your browser does not support the audio element.     </p>
 <embed src="music.mp3" width="180" height="90" hidden="true" autoplay="true" loop="true" volume="0.2" />
-</audio> -->
+</audio>
 <img id="header" src="Etikett.png" >
 <img id="mute" src="unmute.png" >
+<img id="info" src="info.png" >
+<!-- <img id="grab2" src="grab2.png" > -->
 
+<div id="bam"> Hold mouse button for 2 seconds. </div>
 
-
-    <div id="startingPoint"> <img id="explain" src="Interface.png" ></div>
+    <div class="showed" id="startingPoint"> <img id="explain" src="Interface.png" ></div>
     
     
-<div id="button_wrap2"> <button class="animate__animated animate__fadeInUp animate__delay-1s" id="go" > Got it! </button> </div> 
-  <div id="button_wrap"> <a id="gotit" href="main.html"> Got it!</a>
-  </div>
-   
+
+  <div id="button_wrap"> <button class="animate__animated animate__fadeInUp animate__delay-1s" id="init2" onclick="init2()"> Got it!</button> </div>
+   <div id="button_wrap2"> <!--<button class="animate__animated animate__fadeInUp animate__delay-3s" id="go" onclick="hideStart()"> Start </button> --> </div> 
 
    <div id="text"> Let us take you on a fruity adventure. <br>
     Follow the peach. </div>
 
-
+    
 
 
 
